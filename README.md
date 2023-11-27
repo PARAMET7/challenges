@@ -34,8 +34,8 @@ we can add `line` of code `name`
 
 ### code block
 
-``` js
-let coch = "coriander"
-let students = 17
+```js
+let coch = "coriander";
+let students = 17;
 ```
 
