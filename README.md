@@ -30,4 +30,12 @@ learning coding the day 27,11,2023
 
 ### code line
 
-we can add `line`of code `name`
+we can add `line` of code `name`
+
+### code block
+
+``` js
+let coch = "coriander"
+let students = 17
+```
+
