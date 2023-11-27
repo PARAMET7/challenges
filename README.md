@@ -13,6 +13,6 @@ learning coding the day 27,11,2023
 3. third item
 
 ### Unoder list
--first item
--second item
+- first item
+- second item
 
