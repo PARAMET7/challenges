@@ -1,4 +1,5 @@
 /* Please scroll down to the start of your exercise! */
+./css/styles.css`
 
 * {
   box-sizing: border-box;
@@ -11,13 +12,13 @@ body {
 }
 
 section {
-  background-color: lemonchiffon;
+  background-color: rgb(217, 197, 17);
   display: grid;
   place-items: center;
 }
 
 .skyblue {
-  background-color: skyblue;
+  background-color: rgb(70, 81, 85);
 }
 
 button {
@@ -30,18 +31,36 @@ button {
 /* Add your CSS styles below this line. Feel free to replace the comments with your code. Make sure not to put your code into the comments, because then nothing will happen. */
 
 .button1 {
+  text-indent: 11cqw;
+  color: blue;
+  background-color: aqua;
+  border-radius: 5px;
   /*Style me! Change my border, set a border radius or what you want to try out. :) */
 }
 
 .button2 {
+  color: rgb(246, 255, 0);
+  background-color: rgb(255, 0, 195);
+  border-radius: 5px;
   /*Style me! Change my color, or my background-color. Or both! You can test out different color modes here - like HEX, RGB, ... */
 }
 
 .button3 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(255, 0, 208);
+  background-color: rgb(51, 0, 255);
+  border-radius: 5px;
+  border: 40px 40px 40px 40px;
   /*Style me! You can test out changing the font, or font size, ...*/
 }
 
 .button4 {
+  box-decoration-break: clone;
+  text-shadow: 1cm;
+  background-color: rgb(125, 100, 184);
+  color: rgb(6, 50, 11);
+  background-color: rgb(0, 255, 4);
+  border-radius: 5px;
   /*Style me! Can you add a shadow to this button? Maybe play around with the shadow properties, as well? You can even color the shadow, make it bigger or smaller, ... */
 }
 
