@@ -1,3 +1,35 @@
 * {
   box-sizing: border-box;
 }
+
+.color-text {
+  color: rgb(215, 78, 146);
+
+}
+.color-text1 {
+  color: rgb(182, 43, 48);
+
+}
+
+.color-text2 {
+  color: rgb(159, 43, 182);
+}
+
+.background{
+  background-color: lightblue;
+}
+img {
+  border-radius: 53px;
+}
+button {
+  background-color: lightblue;
+  border: none;
+}
+
+path {
+  color: brown;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
