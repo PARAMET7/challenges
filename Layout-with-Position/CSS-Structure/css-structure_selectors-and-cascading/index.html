@@ -10,39 +10,39 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="main_navigation1">
       <nav>
-        <ul>
+        <ul class="main_navigation2">
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
-          <li><a href="#" class="current">About</a></li>
+          <li ><a href="#" class="current">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section>
-        <h1>About</h1>
+      <section class="per">
+        <h1 class="title_main">About</h1>
         <p class="text" id="welcome-text">
           Welcome to your basic practice website! Enjoy your stay!
         </p>
         <p class="text">
           This is a text element. It includes an
-          <a href="/">internal link</a>.
+          <a class="links" href="/">internal link</a>.
         </p>
         <p class="text">
           This is another text element. It includes an
-          <a href="https://developer.mozilla.org/de/" target="_blank"
+          <a class="links_ex" href="https://developer.mozilla.org/de/" target="_blank"
             >external link</a
           >.
         </p>
-        <p class="text text-note">This is a small note.</p>
+        <p class="text__text-note">This is a small note.</p>
 
-        <ul class="list">
-          <li>This is a list item</li>
+        <ul class="list" id="list_contain">
+          <li id="items">This is a list item</li>
           <li>
             This is a list item
-            <ul class="list">
+            <ul class="list" id="item_nested">
               <li>This is a nested list item</li>
               <li>This is a nested list item</li>
               <li>This is a nested list item</li>
@@ -53,14 +53,14 @@
 
         <p class="text">
           This is the last text element in the main content.There is also an
-          <a href="/">internal link</a>.
+          <a class="links" href="/">internal link</a>.
         </p>
 
         <p class="text text-note">This is another small note.</p>
       </section>
     </main>
     <footer>
-      <p class="text">
+      <p class="text" id="footer">
         This is a text element in the footer with a <a href="/">link</a>.
       </p>
     </footer>
