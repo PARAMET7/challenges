@@ -9,6 +9,10 @@ body {
   flex-direction: column;
   margin: 80px 0 45px 0;
   font-family: system-ui;
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  z-index: 1;
 }
 
 /**
@@ -17,7 +21,10 @@ body {
  * document is scrolled.
  */
 .header {
-  background: #140523;
+  position: fixed;
+  top : 10px;
+  width : 100%;
+  background: #6d4398;
   color: #ffffff;
   height: 80px;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
@@ -25,9 +32,12 @@ body {
 }
 
 .header__text {
-  color: #ff4a11;
-}
 
+  background: #140523;
+  color: #ad2828;
+  bottom: 0px;
+  width: 100%;
+}
 .header__heading {
   margin: 0;
 }
@@ -38,6 +48,8 @@ body {
  * document is scrolled.
  */
 .footer {
+  position: fixed;
+  bottom: 10px;
   background: #140523;
   color: #ffffff;
   height: 48px;
@@ -48,15 +60,21 @@ body {
  * Define the card as reference frame for descendant elements, that require absolute positioning.
  */
 .card {
+
   margin: 20px 10%;
   border: 5px solid #252629;
   padding: 3% 10%;
   scroll-margin-top: 100px;
   border-radius: 2rem;
+
+
 }
 
 .card__heading {
   margin: 0 0 10px 0;
+  position: absolute;
+
+
 }
 
 /**
@@ -68,6 +86,12 @@ body {
   padding: 6px 12px;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  position: absolute;
+  top : 30px;
+
+  position: sticky;
+  bottom: 70px;
+  transform: translatex(700%);
 }
 
 /**
@@ -75,7 +99,7 @@ body {
  * unaffected when the document is scrolled.
  */
 .goto-top {
-  width: 48px;
+  width: 70px;
   height: 48px;
   padding: 8px;
   border-radius: 50%;
@@ -87,4 +111,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: sticky;
+  bottom: 70px;
 }
