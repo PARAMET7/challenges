@@ -3,10 +3,19 @@
 /* Scroll down to the exercise. */
 /* -------------------------------------------------------- */
 *,
+:root {
+  --color-white: #ffffff;
+  --secondary-primary: #8236ff;
+  --color-black-light: #303030;
+  --border-radius-small: 4px;
+}
+
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
+
 
 body {
   margin: 0;
@@ -27,7 +36,10 @@ article {
   padding: 1rem;
 }
 
-header,
+header {
+  background: var(--color-black-light);
+
+}
 footer {
   background-color: #212f3c;
   padding: 1.5rem;
@@ -49,15 +61,16 @@ nav li {
 /* -------------------------------------------------------- */
 
 /* 1. These styles should apply to the headline */
- .title_main {
+h1 {
   outline: 2px dashed red;
   font-size: 2rem;
   margin: 0 2rem 0 0;
   color: #2673bb;
+  color: var(--color-white);
 }
 
 /* 2. These styles should apply to all links */
-.links {
+strong {
   outline: 2px dashed red;
   color: #ff00e6;
 }
@@ -79,6 +92,9 @@ nav li {
 .main_navigation1 {
   outline: 2px dashed red;
   color: #22e781;
+  border-radius: var(--border-radius-small);
+  background-color: var(--secondary-primary);
+  color: var(--color-white);
 }
 
 /* 6. These styles should apply to all links in the footer */
