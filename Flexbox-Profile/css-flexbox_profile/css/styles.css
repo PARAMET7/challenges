@@ -1,0 +1,59 @@
+:root {
+    --primary-dark: #2E016D;
+    --primary: #3F0097;
+    --primary-light: #8236FF;
+    --secondary-dark: #38CCDA;
+    --secondary: #7fD9E2;
+    --accent: #FFD15D;
+
+    --black-light: #303030;
+    --black: #000000;
+    --white: #FFFFFF;
+    --grey-dark: #B6B9C2;
+    --grey-light: #F5F6F6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.main__title {
+  color :#016d35
+  padding: 10px;
+  background: var(--primary);
+  color: var(--white);
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+.profile__image {
+align-self: center;
+  border-radius: 50%;
+  max-width: 50%;
+  height: auto;
+}
+
+.tech-stack__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 10px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tech-stack__list-item {
+  padding: 10px;
+  background-color: var(--primary-dark);
+  color: var(--white);
+  border-radius: 10px;
+}
