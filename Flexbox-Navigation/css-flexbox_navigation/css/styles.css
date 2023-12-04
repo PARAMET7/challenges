@@ -31,12 +31,15 @@ a {
 ul {
   list-style: none;
   padding: 0;
+  align-self: flex-end;
 }
 
 .header {
-  padding: 20px;
+  padding: 40px;
+  color : red;
   color: var(--black-light);
   background-color: var(--grey-light);
+
 }
 
 .navigation__link {
@@ -44,4 +47,11 @@ ul {
   color: var(--white);
   padding: 5px 14px;
   border-radius: 5px;
+}
+
+.flex {
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  justify-content: space-between;
 }
