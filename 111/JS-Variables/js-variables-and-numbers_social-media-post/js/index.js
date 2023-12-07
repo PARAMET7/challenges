@@ -10,6 +10,10 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+const title = "hello all";
+const text = "hello you all univers flying pizza ";
+const number = 333;
+const boolean = true
 
 // --^-- write your code here --^--
 
@@ -18,5 +22,10 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+
+console.log("the title:",title)
+console.log(text)
+console.log(number);
+console.log(boolean)
 
 // --^-- write your code here --^--
