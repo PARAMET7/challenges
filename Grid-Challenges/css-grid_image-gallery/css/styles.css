@@ -41,6 +41,8 @@ body {
 .teaser-grid {
   min-width: 40rem;
   min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(0, 50%));
 
   /* Add styles to the grid container */
 }
