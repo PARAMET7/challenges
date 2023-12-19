@@ -5,4 +5,16 @@ function handleUserLogin(onSuccess) {
   onSuccess();
 }
 
+function showWelcomeMessage() {
+  console.log("Welcome! You are logged in now.")
+}
+showWelcomeMessage();
 // Call handleUserLogin below!
+
+
+
+const l = handleUserLogin(showWelcomeMessage);
+
+handleUserLogin((l) => {
+  showWelcomeMessage();
+});
