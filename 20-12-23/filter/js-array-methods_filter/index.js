@@ -43,8 +43,6 @@ const allCardsWithTagsHTMLOrJSThatAreBookmarked = cards.filter(e => e.tags.inclu
 console.log(allCardsThatAreNotBookmarked)
 
 
-
-
 export {
   onlyCardWithIdTwo,
   allCardsWith3Tags,
