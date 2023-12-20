@@ -39,17 +39,27 @@ const questionsAndAnswersTogether = cards.map ((e) => {
 
 // ["How often can I use <header>? - As often as you like.", ...]
 
-const questionAndAnswer = cards.map ((e) => {
+const questionAndAnswer1 = cards.map ((e) => {
   return `question:  ${e.question} , answer: ${e.answer}`
 
 })
 
-console.log(questionAndAnswer)
+console.log(questionAndAnswer1)
 
 
 // [{ question: 'How often can I use <header>?', answer: 'As often as you like.'}, {...}]
 
+const questionAndAnswer = cards.map ((e) => {
+  let obj = {
+    question: e.question,
+    answer: e.answer
+  }
 
+  return obj;
+
+});
+
+console.log(questionAndAnswer)
 
 
 export { lowerCaseAnswers, questionsAndAnswersTogether, questionAndAnswer };
