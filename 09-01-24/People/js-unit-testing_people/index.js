@@ -19,7 +19,6 @@ export function getPeopleNamesOlderThan(people, age) {
   return people
     .filter((p) => p.age > age)
     .map((p) => p.firstName + " " + e.lastName);
-
 }
 
 
