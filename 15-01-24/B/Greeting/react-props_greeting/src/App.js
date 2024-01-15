@@ -1,5 +1,15 @@
 import "./styles.css";
 
+
+
+
+
+
+function Greeting(prop) {
+  const {name} = prop;
+  return <h2>hello, {name}!</h2>;
+}
+
 export default function App() {
-  return <h1>Replace me with your component!</h1>;
+  return <Greeting name="Eshed" />;
 }
