@@ -1,6 +1,6 @@
-import React from "react";
+import React  { useState } from "react";
 import "./styles.css";
-import { useState } from "react";
+
 
 export default function App() {
   // let count = 0;
@@ -15,7 +15,7 @@ export default function App() {
           onClick={() => {
             // console.log("🤔");
             setCount(count - 1);
-            console.log("🥰");
+            console.log("😊");
           }}
         >
           -
