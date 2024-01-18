@@ -19,7 +19,6 @@ export default function App() {
     <div className="container">
       <h1>Place a Table Reservation</h1>
       <Counter
-
         Increment={Increment}
         Decrement={Decrement}
       />
