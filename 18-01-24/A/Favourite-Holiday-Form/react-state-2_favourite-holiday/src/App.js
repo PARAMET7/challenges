@@ -9,15 +9,18 @@ export default function App() {
     event.preventDefault();
     console.log("event=>",event);
 
-    const formData = new FormData(event.target);
-    const data = Object.fromEntries(formData);
 
-    console.log("formData=>",formData);
-    console.log("data =>",data);
 
-    setFHoliday(data.Fholiday);
-    setFDate(data.Fdate);
-    event.target.reset();
+    // console.log("formData=>",formData);
+    // console.log("data =>",data);
+
+    console.log("data =>",event.target.elements);
+
+    setFHoliday(event.target.elements.holiday.value);
+    setFDate(event.target.elements.date.value);
+    document.querySelector("form").reset();
+    document.getElementById("holiday").focus();
+
   }
 
   return (
@@ -29,7 +32,7 @@ export default function App() {
         aria-labelledby="favourite-holiday"
         onSubmit={handleSubmit}
       >
-        <label htmlFor="holiday">My Favourite Holiday: </label>
+        <label htmlFor="holiday">My Favourite Holiday:</label>
         <input
           id="holiday"
           type="text"
