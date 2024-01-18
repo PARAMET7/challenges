@@ -19,7 +19,7 @@ export default function App() {
     <div className="container">
       <h1>Place a Table Reservation</h1>
       <Counter
-        People={people}
+
         Increment={Increment}
         Decrement={Decrement}
       />
