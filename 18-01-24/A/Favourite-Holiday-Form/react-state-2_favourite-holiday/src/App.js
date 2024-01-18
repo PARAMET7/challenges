@@ -1,9 +1,26 @@
 import React from "react";
 import "./styles.css";
+import { useState } from "react";
 
 export default function App() {
+  const [Fholiday, setFHoliday] = useState("What holiday would you like?");
+  const [Fdate, setFDate] = useState("When holiday would you like?");
   function handleSubmit(event) {
     event.preventDefault();
+    console.log("event=>",event);
+
+
+
+    // console.log("formData=>",formData);
+    // console.log("data =>",data);
+
+    console.log("data =>",event.target.elements);
+
+    setFHoliday(event.target.elements.holiday.value);
+    setFDate(event.target.elements.date.value);
+    document.querySelector("form").reset();
+    document.getElementById("holiday").focus();
+
   }
 
   return (
@@ -15,7 +32,7 @@ export default function App() {
         aria-labelledby="favourite-holiday"
         onSubmit={handleSubmit}
       >
-        <label htmlFor="holiday">My Favourite Holiday: </label>
+        <label htmlFor="holiday">My Favourite Holiday:</label>
         <input
           id="holiday"
           type="text"
@@ -30,10 +47,12 @@ export default function App() {
       </form>
       <h2>Output of Submitted Data</h2>
       <p>
-        Favourite Holiday: <span className="output">New Year</span>
+        {/* Favourite Holiday: <span className="output">New Year</span> */}
+        Favourite Holiday: <span className="output">{Fholiday}</span>
       </p>
       <p>
-        Date: <span className="output">Well...</span>
+        {/* Date: <span className="output">Well...</span> */}
+        Date: <span className="output">{Fdate}</span>
       </p>
     </div>
   );
