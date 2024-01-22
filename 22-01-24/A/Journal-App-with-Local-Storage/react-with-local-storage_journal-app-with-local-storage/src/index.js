@@ -4,6 +4,8 @@ import App from "./App";
 import "./colors.css";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
+import useLocalStorageState from "use-local-storage-state";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
